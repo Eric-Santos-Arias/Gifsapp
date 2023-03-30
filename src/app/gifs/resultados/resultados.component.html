@@ -1,0 +1,16 @@
+<hr>
+<!-- lugar donde se mostarar los gifts -->
+<div class="row">
+    <div *ngFor="let item of resultados" class="col animate__animated animate__fadeIn  ">
+
+       <div class='imagenes'>
+            <img  src="{{item.images.downsized_medium.url}}" alt="{{item.title}}">
+            <div class="card-text">
+                {{item.title}}
+            </div>
+    
+       </div>
+
+    </div>
+</div>
+<!-- final del contenido -->
